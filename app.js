@@ -95,10 +95,6 @@
 //     alert("bazar");
 // }
 
-
-
-
-
 // let a = +prompt("eded daxil et");
 // let star = ''
 // for (let i = a; i>0 ; i--){
@@ -106,10 +102,7 @@
 // }
 // console.log(star);
 
-
 // debugger;
-
-
 
 // let a = +prompt("esas ededi daxil edin");
 // let b = +prompt("quvveti daxil edin");
@@ -118,9 +111,6 @@
 //     c = a*c;
 //     console.log(c);
 // }
-
-
-
 
 // let a = +prompt("baslangic deyer");
 // let b = +prompt("Son deyer");
@@ -135,31 +125,20 @@
 // }
 // console.log(c , d);
 
-
 // let a = 56;
 // console.log(a**5);
 // console.log(a%3);
-
-
 
 // let firstName = "Nurlan";
 // let lastName = "Mahmudov";
 
 // console.log("Your name is " + firstName , lastName);
 
-
-
 // let fullName = "Nurlan Mahmudov";
 // console.log(fullName.length - 1);
 
-
-
-
 // let fullName = "Nurlan Mahmudov";
 // console.log(fullName[0] ,fullName[7] );
-
-
-
 
 // let a = +prompt("birinci ededi daxil edin");
 // let b = +prompt("ikinci ededi daxil edin");
@@ -169,19 +148,11 @@
 // console.log(a+b);
 // console.log(a-b);
 
-
-
-
-
 // let a = 12345;
 // let b = 98765;
 // let c = a*b;
 // console.log(parseInt(c/10000)%10);
 
-
-
-
- 
 // let a = +prompt("4 reqemli eded daxil edin");
 
 // let el1=parseInt(a/1000);
@@ -191,9 +162,6 @@
 
 // console.log(el1 + el2 + el3 + el4);
 
-
-
-
 // let a = +prompt("bir eded daxil edin");
 
 // if(a<50 && a>=1){
@@ -201,9 +169,6 @@
 // }else{
 //     console.log("1-50 araliginda deyil");
 // }
-
-
-
 
 // let x = +prompt("birinci ededi daxil edin");
 // let y = +prompt("ikinci ededi daxil edin");
@@ -214,7 +179,6 @@
 //     alert("NOO");
 // }
 
-
 // let a = +prompt("bir eded daxil edin");
 
 // if(a%2==0){
@@ -222,8 +186,6 @@
 // }else{
 //     alert("tek ededdir");
 // }
-
-
 
 // let a =6;
 
@@ -238,13 +200,11 @@
 //         }else{
 //             metn+=" "
 //         }
-      
+
 //     }
 //     metn += '\n'
 // }
 // console.log(metn);
-
-
 
 // let a = +prompt("bir eded daxil edin");
 // let b = 0;
@@ -260,14 +220,13 @@
 // }
 // console.log(b);
 
-
 // let cem = 0;
 // for(let i = 1 ; i <=100 ; i++){
 //     cem = 0;
 //     for (let j = 1; j < i; j++) {
 //         if(i%j==0){
 //             cem+=j
-//         } 
+//         }
 //     }
 //     if(cem==i){
 //         console.log(i ,  "eded mukemmeldir");
@@ -276,7 +235,7 @@
 //     }
 // }
 
-// code war , e-olimp 
+// code war , e-olimp
 
 // let eded = prompt("bir eded daxil edin");
 // let cem = 0;
@@ -289,3 +248,117 @@
 // }else{
 //     alert("armstrong deyil");
 // }
+
+// function myFunc (a){
+//     for(let i = 0 ; i<a ; i++){
+//         console.log("Hello World");
+//     }
+// }
+// myFunc(10);
+
+// function myFunc (a , b , c){
+//     if(c=="-"){
+//         console.log(a - b);
+//     }else if(c=="+"){
+//         console.log(a + b);
+//     }else if(c=="/"){
+//         console.log(a / b);
+//     }else if(c == "*"){
+//         console.log(a*b);
+//     }else{
+//         console.error("yalnis emeliyyat")
+//     }
+// }
+
+// myFunc(5 , 8 , "1");
+
+// function myFunc(a , b , c){
+//     console.log(Math.max(a , b , c));
+// }
+
+// myFunc(5 , 8 , 3)
+
+// function myFunc (a , b){
+//     if(typeof(a) == 'number' && typeof(b) == 'number' ){
+//         console.log(a - b);
+//     }else{
+//         console.log(null);
+//     }
+// }
+
+// myFunc(10 , 5)
+
+// function myFunc (a){
+//     let result = a.split(" ");
+//     let txt = ''
+//     for(let i = 0 ; i< result.length ; i++ ){
+//        txt += result[i][0].toUpperCase() + result[i].slice(1) + ' ';
+//     }
+//     console.log(txt);
+// }
+
+// myFunc("hello world how are you");
+
+// function myFunc (a){
+//     let herf = a.split("");
+//     let cvb = "";
+//     for(let i = herf.length-1 ; i >=0 ; i--){
+//         cvb+=herf[i];
+//     }
+//     console.log(cvb);
+// }
+// myFunc("Hello");
+
+// function myFunc (a){
+//     let soz = a.split(" ");
+//     let cvb = "";
+//     for(let i = soz.length - 1; i>=0; i--){
+//         cvb+=soz[i] + " "
+//     }
+//     console.log(cvb);
+// }
+
+// myFunc ("Nurlan eve getdi");
+
+// function myFunc(a){
+//     let sozSayi = a.split(" ").length;
+//     console.log(sozSayi);
+// }
+
+// myFunc("Hi world how are you");
+
+// let a = "          hello               ";
+// console.log(a.trimEnd());
+
+// let a = prompt("AD SOYAD : daxil edin").split(" ");
+// console.log(a[1] + " " + a[0]);
+
+// let nums = prompt("5 eded daxil edin");
+// let arr = nums.split(" ");
+// console.log(Math.min(...arr));
+
+// let nums = [0, 1, 2, 3, 4];
+// nums.shift()
+// nums.push(5)
+// console.log(nums);
+
+
+
+
+// let arr = [-12, 78, 23, -55, -69, 32, -62, -34, 45, 99];
+// let arr2 = [];
+// arr.forEach((item)=>{
+//     if(item<0){
+//         arr2.push(Math.abs(item));
+//     }else{
+//         arr2.push(item*2)
+//     }
+// })
+// console.log(arr2);
+
+
+
+
+
+let arr = [62, 27, 34, 90, 45];
+
