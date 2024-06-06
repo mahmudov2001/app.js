@@ -342,9 +342,6 @@
 // nums.push(5)
 // console.log(nums);
 
-
-
-
 // let arr = [-12, 78, 23, -55, -69, 32, -62, -34, 45, 99];
 // let arr2 = [];
 // arr.forEach((item)=>{
@@ -356,9 +353,222 @@
 // })
 // console.log(arr2);
 
+// let arr = [62, 27, 34, 90, 45];
+// let newArr = [];
+// arr.forEach(item=>{
+//     newArr.push(item+5);
+// })
+// console.log(arr);
+// console.log(newArr);
+
+// let nums = [12, 36, 45, 14, 96];
+
+//  let sumFunk = nums.reduce((total, value, index, array)=>{
+//     return total + value
+// })
+
+// console.log(sumFunk);
+
+// let nums = [12, 36, 45, 14, 96];
+
+//  let sumFunk = nums.reduce((total, value, index, array)=>{
+//     return total * value
+// })
+
+// console.log(sumFunk);
+
+// let arr = [45, 62, 23, 42, 45, 85];
+
+// arr.forEach(item=>{
+//     for(let i = 1; i<arr.length; i++){
+//         if(item==arr[i]){
+//             let arr2 = [];
+//             arr2.push(arr[i]);
+//             console.log();
+//         }
+//     }
+//     console.log(item);
+// })
+
+// let arr = [12, 34, 54, 76, 54, 12, 34, 34, 34, 34];
+// let setArr = arr.filter((item, index)=>{
+//     return arr.indexOf(item)===index;
+// })
+// console.log(setArr);
+
+// let users = {
+//   name: "Nurlan",
+//   surname: "Mahmudov",
+//   age: 23,
+// };
+// users.job = "Web Developer";
+// delete users.age;
+// console.log(users);
+
+// let product = {
+//   name: "milk",
+//   id: 1,
+//   weight: "2 litr",
+// };
+
+// let product2 = {
+//   ...product,
+//   price: "10 cent",
+// };
+// console.log(product2);
+
+// function info(ad, soyad, ataAdi) {
+//   let obj = {
+//     ad: ad,
+//     soyad: soyad,
+//     ataAdi: ataAdi,
+//   };
+//   return obj;
+// }
+
+// console.log(info("nurlan", "mahmudov", "hesen"));
+
+// let arr = [
+//   {
+//     ad: "Nurlan",
+//     soyad: "Mahmudov",
+//     yas: 22,
+//   },
+//   {
+//     ad: "Nigar",
+//     soyad: "Abdullayeva",
+//     yas: 21,
+//   },
+//   {
+//     ad: "Ali",
+//     soyad: "Kerimov",
+//     yas: 30,
+//   },
+// ];
+
+// let findName = arr.find((item, index)=>{
+//     if(item.ad=="Ali"){
+//         return item;
+//     }
+// })
+// console.log(findName);
+
+// let firstNum = document.querySelector(".firstNum");
+// let secondNum = document.querySelector(".secondNum");
+// let button = document.querySelector(".button");
+// let cvb = document.querySelector(".cvb");
+// function plus(){
+//   let result = Number(firstNum.value) + Number(secondNum.value);
+//   document.querySelector(".cvb").innerHTML += result
+// }
+// function minus(){
+//   let result = Number(firstNum.value) - Number(secondNum.value);
+// }
+// function vurma(){
+//   let result = Number(firstNum.value) * Number(secondNum.value);
+// }
+// function bolme(){
+//   let result = Number(firstNum.value) / Number(secondNum.value);
+// }
+
+// function reset(){
+//   firstNum.value="";
+//   secondNum.value="";
+// }
+
+// function myFunc(e){
+//   if(e.innerHTML == "+"){
+//     let result = Number(firstNum.value) + Number(secondNum.value);
+//     document.querySelector(".cvb").innerHTML += result
+//   }else if(e.innerHTML == "-"){
+//     let result = Number(firstNum.value) - Number(secondNum.value);
+//     document.querySelector(".cvb").innerHTML += result
+//   }else if(e.innerHTML == "*"){
+//     let result = Number(firstNum.value) * Number(secondNum.value);
+//     document.querySelector(".cvb").innerHTML += result
+//   }else{
+//     let result = Number(firstNum.value) / Number(secondNum.value);
+//     document.querySelector(".cvb").innerHTML += result
+//   }
+// }
+// function reset(){
+//   firstNum.value="";
+//   secondNum.value="";
+//   cvb.innerHTML ="Cavab:";
+// }
+
+// let cvb = document.querySelector(".cvb");
+// let i = 0;
+// function minus(){
+//   cvb.innerHTML = --i;
+//   if(i<0){
+//     cvb.style.color = "red"
+//   }else if(i==0){
+//     cvb.style.color = "black"
+
+//   }
+// }
+// function plus(){
+//   cvb.innerHTML = ++i;
+//   if(i>0){
+//     cvb.style.color = "green"
+//   }else if(i==0){
+//     cvb.style.color = "black"
+
+//   }
+// }
+
+// let ul = document.querySelector(".myUl");
+// let arr = ["HTML","CSS","JS","REACT"];
+// arr.forEach(item=>{
+//     ul.innerHTML += `<li class = "li">${item}</li>`;
+//     let liArr = document.querySelectorAll(".li");
+//     liArr.forEach(item=>{
+//         item.addEventListener("click",()=>{
+//             liArr.forEach(item => item.style.color="black")
+//             item.style.color = "red";
+//         })
+//     })
+// })
+
+// let arr = ["HTML", "CSS", "JS", "REACT"];
+// arr.forEach((item) => {
+//   document.getElementById("select").innerHTML += `
+//   <option value =${item}>${item}</option>
+// `;
+// });
+
+// document.getElementById("select").addEventListener('change', (e)=>{
+//     document.getElementById('demo').innerHTML= "Option:"
+//     document.getElementById('demo').innerHTML+= e.target.value
+// })
 
 
+// let btn = document.querySelector(".btn");
+// let p = document.querySelector(".p")
+// btn.addEventListener("click",()=>{
+//     let color1 = parseInt(Math.random()*255);
+//     let color2 = parseInt(Math.random()*255);
+//     let color3 = parseInt(Math.random()*255);
+
+//     p.innerHTML =`Background color:RGB(${color1},${color2},${color3})`
+//     document.body.style.backgroundColor = `rgb(${color1},${color2},${color3})`;
+// })
 
 
-let arr = [62, 27, 34, 90, 45];
+// let arr = ["0", "1", "2", "3", "4","5","6","7","8","9","a","b","c","d","e","f"];
+// let btn = document.querySelector(".btn");
+// let p = document.querySelector(".p");
+// let text = "#";
+
+
+// btn.addEventListener("click" , ()=>{
+//     for(let i = 0; i < 6; i++){
+//         let reqem = parseInt(Math.random()*16);
+//         text+=arr[reqem];
+//         document.body.style.backgroundColor = `${text}`
+//     }
+//     p.innerHTML = `Background Color: HexCode ${text}`;
+//     text="#"
+// })
 
